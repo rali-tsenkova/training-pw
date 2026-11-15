@@ -1,6 +1,4 @@
-# New Request wizard - 5 steps
-
-## Login page
+# Home page
 ##### Email input
 input[type="email"]
 
@@ -10,12 +8,18 @@ input[type="password"]
 ##### Login button
 button[type=submit"]
 
+##### Heading
+h1[data-testid="cs-login-title"]
+
+
+# Dashboard page
 ##### User icon
 [data-testid="cs-user-menu-button"]
 
 ##### User role
 ul[role="menu"]>li[tabindex="-1"]>div>div>span
 
+# New Request wizard - 5 steps
 
 ## Step 1:
 ##### Request title
