@@ -1,0 +1,89 @@
+# New Request wizard - 5 steps
+
+## Step 1:
+##### Request title
+[name="title"]
+input[name='title']
+
+##### Description
+[name="description"]
+textarea[name="description"]
+
+##### Date of Request
+[name="dateOfRequest"]
+input[name="dateOfRequest"]
+
+##### Category
+[name="category"]
+input[name="category"]
+
+##### Selection of category
+[data-value="roads-and-infrastructure"]
+li[data-value="roads-and-infrastructure"]
+
+##### Priority - select "Low"
+//div[@data-testid="cs-new-request-priority"]//span[contains(text(),'Low')]
+
+##### Cancel button
+[data-testid="cs-new-request-wizard-cancel"]
+button[data-testid="cs-new-request-wizard-cancel"]
+
+##### Next button
+[data-testid="cs-new-request-wizard-next"]
+button[data-testid="cs-new-request-wizard-next"]
+
+## Step 2
+##### Street address
+[name="streetAddress"]
+input[name="streetAddress"]
+
+##### City
+[name="city"]
+input[name="city"]
+
+##### Postal code
+[name="postalCode"]
+input[name="postalCode"]
+
+##### Location description
+[name="locationText"]
+input[name="locationText"]
+
+##### Next button
+[data-testid="cs-new-request-wizard-next"]
+button[data-testid="cs-new-request-wizard-next"]
+
+## Step3
+##### Contact Method
+[data-testid="cs-new-request-contact-method"]
+div[data-testid="cs-new-request-contact-method"]
+
+##### Select contact method "Email"
+[data-value="EMAIL"]
+li[data-value="EMAIL"]
+
+##### Email
+[name="email"]
+input[name="email"]
+
+##### Phone
+[name="phone"]
+input[name="phone"]
+
+##### Next button
+[data-testid="cs-new-request-wizard-next"]
+button[data-testid="cs-new-request-wizard-next"]
+
+## Step 4
+##### Consent
+[data-testid="CheckBoxOutlineBlankIcon"]
+svg[data-testid="CheckBoxOutlineBlankIcon"]
+
+##### Next button
+[data-testid="cs-new-request-wizard-next"]
+button[data-testid="cs-new-request-wizard-next"]
+
+## Step 5
+##### Submit Request button
+[data-testid="cs-new-request-wizard-submit"]
+button[data-testid="cs-new-request-wizard-submit"]
