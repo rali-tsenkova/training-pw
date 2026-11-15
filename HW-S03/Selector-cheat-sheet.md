@@ -22,13 +22,16 @@ input[name="category"]
 li[data-value="roads-and-infrastructure"]
 
 ##### Priority - select "Low"
+### needs data-testid
 //div[@data-testid="cs-new-request-priority"]//span[contains(text(),'Low')]
 
 ##### Cancel button
+### have data-testid
 [data-testid="cs-new-request-wizard-cancel"]
 button[data-testid="cs-new-request-wizard-cancel"]
 
 ##### Next button
+### have data-testid
 [data-testid="cs-new-request-wizard-next"]
 button[data-testid="cs-new-request-wizard-next"]
 
@@ -50,11 +53,13 @@ input[name="postalCode"]
 input[name="locationText"]
 
 ##### Next button
+### have data-testid
 [data-testid="cs-new-request-wizard-next"]
 button[data-testid="cs-new-request-wizard-next"]
 
 ## Step3
 ##### Contact Method
+### have data-testid
 [data-testid="cs-new-request-contact-method"]
 div[data-testid="cs-new-request-contact-method"]
 
@@ -71,19 +76,23 @@ input[name="email"]
 input[name="phone"]
 
 ##### Next button
+### have data-testid
 [data-testid="cs-new-request-wizard-next"]
 button[data-testid="cs-new-request-wizard-next"]
 
 ## Step 4
 ##### Consent
+### have data-testid
 [data-testid="CheckBoxOutlineBlankIcon"]
 svg[data-testid="CheckBoxOutlineBlankIcon"]
 
 ##### Next button
+### have data-testid
 [data-testid="cs-new-request-wizard-next"]
 button[data-testid="cs-new-request-wizard-next"]
 
 ## Step 5
 ##### Submit Request button
+### have data-testid
 [data-testid="cs-new-request-wizard-submit"]
 button[data-testid="cs-new-request-wizard-submit"]
