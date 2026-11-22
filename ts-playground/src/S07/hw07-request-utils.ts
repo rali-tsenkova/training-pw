@@ -1,7 +1,7 @@
 // create small, pure, typed function for id formatting
 
-export function idFormat(id: number, prefix = 'REQ'): string {
-  return `${prefix}-${id}`;
+export function idFormat(id: number): string {
+  return `REQ-${id}`;
 }
 
 // create small, pure, typed function for SLA calculation
@@ -29,15 +29,16 @@ export function isValidCategory(category: string, allowedCategories: string[]): 
 }
 
 // create small, pure, typed function for summary text
-export function summaryPrint(text: string, maxLength: number): void {
-    var formattedID = idFormat(7);
+export function summaryPrint(id: number, priority: number, createdHour: number, currentHour: number, title: string, category: string, allowedCategories: string[]): void {
+    
+    var formattedID = idFormat(id);
     console.log(`Formatted ID is: ${formattedID}`);
-    var slaCalc = slaHours(2);
+    var slaCalc = slaHours(priority);
     console.log(`SLA hours: ${slaCalc}`);
-    var overdue = isOverdue(10, 40, 2);
+    var overdue = isOverdue(createdHour, currentHour, priority);
     console.log(`Is overdue: ${overdue}`);
-    var titleValid = isTitleValid("Fix the pothole on Main Street");
-    console.log(`Is title valid: ${titleValid}`);
-    var categoryValid = isValidCategory("Roads", ["Roads", "Lighting", "Parks"]);
+    var titleValid = isTitleValid(title);
+    console.log(titleValid ? `Title is valid: ${title}` : 'Title is invalid');
+    var categoryValid = isValidCategory(category, allowedCategories);
     console.log(`Is category valid: ${categoryValid}`);
 }
